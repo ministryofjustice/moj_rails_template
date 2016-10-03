@@ -1357,6 +1357,23 @@ run 'rm config/mime_types.rb'
 after_bundle do
   rails_command 'g rspec:install'
   run "echo '--order rand' >> .rspec"
+
+  # These are tolerable-useful if you're new to Rails.  They are little more
+  # than line noise and a complete pain if you're experienced.
+  if yes?('Kill documentary comments?')
+    # Perl is still better at these sort of throw away one-liners...
+    # ...in the general codebase
+    run 'find . -name "*.rb" -exec perl -pi -e "s/^\s*#.*\n//g" {} \;'
+    # Kill multiple newlines
+    run 'find . -name "*.rb" -exec perl -pi -0 -e "s/\n{3,}/\n/g" {} \;'
+    # ...in the yaml files
+    run 'find . -name "*.yml" -exec perl -pi -e "s/^\s*#.*\n//g" {} \;'
+    run 'find . -name "*.yml" -exec perl -pi -0 -e "s/\n{3,}/\n/g" {} \;'
+    # ...in the Gemfile
+    run 'perl -pi -e "s/^\s*#.*\n//g" Gemfile'
+    run 'perl -pi -0 -e "s/\n{3,}/\n/g" Gemfile'
+  end
+
   git :init
   git add: '.'
   git commit: %Q{ -m 'Initial commit' }
