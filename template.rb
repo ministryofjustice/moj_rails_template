@@ -1372,7 +1372,25 @@ after_bundle do
     # ...in the Gemfile
     run 'perl -pi -e "s/^\s*#.*\n//g" Gemfile'
     run 'perl -pi -0 -e "s/\n{3,}/\n/g" Gemfile'
+		run 'perl -pi -0 -e "s/^\=begin.+\=end//" spec/spec_helper.rb'
   end
+
+  # Enable simplecov
+  def simplecov
+		return <<-END.strip_heredoc
+			require 'simplecov'
+			SimpleCov.minimum_coverage 100
+			unless ENV['NOCOVERAGE'] # simplecov conflicts with mutant. This lets us turn it off, when necessary.
+			  SimpleCov.start do
+			    add_filter "/spec/"
+			    add_filter ".bundle/"
+			  end
+			end
+		END
+	end
+
+  run %Q{echo "#{simplecov}" | cat - spec/spec_helper.rb > /tmp/spec_out && mv /tmp/spec_out spec/spec_helper.rb}
+	# End Enable simplecov
 
   git :init
   git add: '.'
