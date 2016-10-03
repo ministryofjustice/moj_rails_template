@@ -155,7 +155,7 @@ end
 
 run 'chmod 755 run.sh'
 
-year = ask('Enter the year for copywrite in the license file')
+year = ask('Enter the year for copyright in the license file')
 file('LICENSE') do
   <<-LICENSE.strip_heredoc
     The MIT License (MIT)
