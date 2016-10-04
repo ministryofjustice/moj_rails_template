@@ -97,14 +97,13 @@ version = ask('Ruby version to use? (this gets used in the Dockerfile, so make s
 
 file('circle.yml') do
   <<-CIRCLE.strip_heredoc
-    machine:
-      ruby:
-        version:
-          #{version}
+  machine:
+    ruby:
+      version: #{version}
 
-    test:
-      override:
-        - bundle exec rake
+  test:
+    override:
+      - bundle exec rake
   CIRCLE
 end
 
