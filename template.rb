@@ -1112,7 +1112,7 @@ file('.rubocop.yml') do
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#reduce-blocks'
       Enabled: false
 
-    Style/SingleLineMethods:
+  Style/SingleLineMethods:
       Description: 'Avoid single-line methods.'
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-single-line-methods'
       Enabled: false
@@ -1128,7 +1128,7 @@ file('.rubocop.yml') do
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
       Enabled: false
 
-    Style/SpaceAfterComma:
+  Style/SpaceAfterComma:
       Description: 'Use spaces after commas.'
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
       Enabled: false
@@ -1144,7 +1144,7 @@ file('.rubocop.yml') do
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#parens-no-spaces'
       Enabled: false
 
-    Style/SpaceAfterNot:
+  Style/SpaceAfterNot:
       Description: Tracks redundant space after the ! operator.
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-space-bang'
       Enabled: false
@@ -1177,7 +1177,7 @@ file('.rubocop.yml') do
     Style/SpaceInsideBlockBraces:
       Description: >-
                      Checks that block braces have or don't have surrounding space.
-                     For blocks taking parameters, checks that the left brace has
+                       For blocks taking parameters, checks that the left brace has
                      or doesn't have trailing space.
       Enabled: false
 
@@ -1190,155 +1190,155 @@ file('.rubocop.yml') do
                      Checks that the equals signs in parameter default assignments
                      have or don't have surrounding space depending on
                      configuration.
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-around-equals'
-      Enabled: false
+                       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-around-equals'
+                     Enabled: false
 
-    Style/SpaceAroundOperators:
-      Description: 'Use a single space around operators.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
-      Enabled: false
+                     Style/SpaceAroundOperators:
+                       Description: 'Use a single space around operators.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
+                     Enabled: false
 
-    Style/SpaceInsideBrackets:
-      Description: 'No spaces after [ or before ].'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
-      Enabled: false
+                     Style/SpaceInsideBrackets:
+                       Description: 'No spaces after [ or before ].'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
+                     Enabled: false
 
-    Style/SpaceInsideHashLiteralBraces:
-      Description: "Use spaces inside hash literal braces - or don't."
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
-      Enabled: false
+                     Style/SpaceInsideHashLiteralBraces:
+                       Description: "Use spaces inside hash literal braces - or don't."
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
+                     Enabled: false
 
-    Style/SpaceInsideParens:
-      Description: 'No spaces after ( or before ).'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
-      Enabled: false
+                     Style/SpaceInsideParens:
+                       Description: 'No spaces after ( or before ).'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
+                     Enabled: false
 
-    Style/SpaceInsideRangeLiteral:
-      Description: 'No spaces inside range literals.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-space-inside-range-literals'
-      Enabled: false
+                     Style/SpaceInsideRangeLiteral:
+                       Description: 'No spaces inside range literals.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-space-inside-range-literals'
+                     Enabled: false
 
-    Style/SpaceInsideStringInterpolation:
-      Description: 'Checks for padding/surrounding spaces inside string interpolation.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#string-interpolation'
-      Enabled: false
+                     Style/SpaceInsideStringInterpolation:
+                       Description: 'Checks for padding/surrounding spaces inside string interpolation.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#string-interpolation'
+                     Enabled: false
 
-    Style/SpecialGlobalVars:
-      Description: 'Avoid Perl-style global variables.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-cryptic-perlisms'
-      Enabled: false
+                     Style/SpecialGlobalVars:
+                       Description: 'Avoid Perl-style global variables.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-cryptic-perlisms'
+                     Enabled: false
 
-    Style/StringLiterals:
-      Description: 'Checks if uses of quotes match the configured preference.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
-      Enabled: false
+                     Style/StringLiterals:
+                       Description: 'Checks if uses of quotes match the configured preference.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
+                     Enabled: false
 
-    Style/StringLiteralsInInterpolation:
-      Description: >-
-                     Checks if uses of quotes inside expressions in interpolated
+                     Style/StringLiteralsInInterpolation:
+                       Description: >-
+                       Checks if uses of quotes inside expressions in interpolated
                      strings match the configured preference.
-      Enabled: false
+                       Enabled: false
 
-    Style/StructInheritance:
-      Description: 'Checks for inheritance from Struct.new.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-extend-struct-new'
-      Enabled: false
+                     Style/StructInheritance:
+                       Description: 'Checks for inheritance from Struct.new.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-extend-struct-new'
+                     Enabled: false
 
-    Style/SymbolLiteral:
-      Description: 'Use plain symbols instead of string symbols when possible.'
-      Enabled: false
+                     Style/SymbolLiteral:
+                       Description: 'Use plain symbols instead of string symbols when possible.'
+                     Enabled: false
 
-    Style/SymbolProc:
-      Description: 'Use symbols as procs instead of blocks when possible.'
-      Enabled: false
+                     Style/SymbolProc:
+                       Description: 'Use symbols as procs instead of blocks when possible.'
+                     Enabled: false
 
-    Style/Tab:
-      Description: 'No hard tabs.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-indentation'
-      Enabled: false
+                     Style/Tab:
+                       Description: 'No hard tabs.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-indentation'
+                     Enabled: false
 
-    Style/TrailingBlankLines:
-      Description: 'Checks trailing blank lines and final newline.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
-      Enabled: false
+                     Style/TrailingBlankLines:
+                       Description: 'Checks trailing blank lines and final newline.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
+                     Enabled: false
 
-    Style/TrailingCommaInArguments:
-      Description: 'Checks for trailing comma in parameter lists.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-params-comma'
-      Enabled: false
+                     Style/TrailingCommaInArguments:
+                       Description: 'Checks for trailing comma in parameter lists.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-params-comma'
+                     Enabled: false
 
-    Style/TrailingCommaInLiteral:
-      Description: 'Checks for trailing comma in literals.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
-      Enabled: false
+                     Style/TrailingCommaInLiteral:
+                       Description: 'Checks for trailing comma in literals.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
+                     Enabled: false
 
-    Style/TrailingWhitespace:
-      Description: 'Avoid trailing whitespace.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-whitespace'
-      Enabled: false
+                     Style/TrailingWhitespace:
+                       Description: 'Avoid trailing whitespace.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-whitespace'
+                     Enabled: false
 
-    Style/TrivialAccessors:
-      Description: 'Prefer attr_* methods to trivial readers/writers.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#attr_family'
-      Enabled: false
+                     Style/TrivialAccessors:
+                       Description: 'Prefer attr_* methods to trivial readers/writers.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#attr_family'
+                     Enabled: false
 
-    Style/UnlessElse:
-      Description: >-
-                     Do not use unless with else. Rewrite these with the positive
+                     Style/UnlessElse:
+                       Description: >-
+                       Do not use unless with else. Rewrite these with the positive
                      case first.
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-else-with-unless'
-      Enabled: false
+                       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-else-with-unless'
+                       Enabled: false
 
-    Style/UnneededCapitalW:
-      Description: 'Checks for %W when interpolation is not needed.'
-      Enabled: false
+                       Style/UnneededCapitalW:
+                         Description: 'Checks for %W when interpolation is not needed.'
+                       Enabled: false
 
-    Style/UnneededPercentQ:
-      Description: 'Checks for %q/%Q when single quotes or double quotes would do.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-q'
-      Enabled: false
+                       Style/UnneededPercentQ:
+                         Description: 'Checks for %q/%Q when single quotes or double quotes would do.'
+                       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-q'
+                       Enabled: false
 
-    Style/TrailingUnderscoreVariable:
-      Description: >-
-                     Checks for the usage of unneeded trailing underscores at the
+                       Style/TrailingUnderscoreVariable:
+                         Description: >-
+                         Checks for the usage of unneeded trailing underscores at the
                      end of parallel variable assignment.
-      Enabled: false
+                     Enabled: false
 
-    Style/VariableInterpolation:
-      Description: >-
-                     Don't interpolate global, instance and class variables
+                     Style/VariableInterpolation:
+                       Description: >-
+                       Don't interpolate global, instance and class variables
                      directly in strings.
       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#curlies-interpolate'
-      Enabled: false
+                       Enabled: false
 
-    Style/VariableName:
-      Description: 'Use the configured style when naming variables.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#snake-case-symbols-methods-vars'
-      Enabled: false
+                     Style/VariableName:
+                       Description: 'Use the configured style when naming variables.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#snake-case-symbols-methods-vars'
+                     Enabled: false
 
-    Style/WhenThen:
-      Description: 'Use when x then ... for one-line cases.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#one-line-cases'
-      Enabled: false
+                     Style/WhenThen:
+                       Description: 'Use when x then ... for one-line cases.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#one-line-cases'
+                     Enabled: false
 
-    Style/WhileUntilDo:
-      Description: 'Checks for redundant do after while or until.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-multiline-while-do'
-      Enabled: false
+                     Style/WhileUntilDo:
+                       Description: 'Checks for redundant do after while or until.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-multiline-while-do'
+                     Enabled: false
 
-    Style/WhileUntilModifier:
-      Description: >-
-                     Favor modifier while/until usage when you have a
+                     Style/WhileUntilModifier:
+                       Description: >-
+                       Favor modifier while/until usage when you have a
                      single-line body.
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#while-as-a-modifier'
-      Enabled: false
+                       StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#while-as-a-modifier'
+                       Enabled: false
 
-    Style/WordArray:
-      Description: 'Use %w or %W for arrays of words.'
-      StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
-      Enabled: false
-  RUBOCOP
-end
+                     Style/WordArray:
+                       Description: 'Use %w or %W for arrays of words.'
+                     StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
+                     Enabled: false
+                     RUBOCOP
+                     end
 
 run 'ctags -R .' if yes?('Should I generate ctags?')
 
@@ -1357,7 +1357,38 @@ run 'rm config/mime_types.rb'
 after_bundle do
   rails_command 'g rspec:install'
   run "echo '--order rand' >> .rspec"
+
+  # These are tolerable-useful if you're new to Rails.  They are little more
+  # than line noise and a complete pain if you're experienced.
+  if yes?('Kill documentary comments?')
+    # Perl is still better at these sort of throw away one-liners...
+    # ...in the general codebase
+    run 'find . -name "*.rb" -exec perl -pi -e "s/^\s*#.*\n//g" {} \;'
+    # Kill multiple newlines
+    run 'find . -name "*.rb" -exec perl -pi -0 -e "s/\n{3,}/\n/g" {} \;'
+    # ...in the yaml files
+    run 'find . -name "*.yml" -exec perl -pi -e "s/^\s*#.*\n//g" {} \;'
+    run 'find . -name "*.yml" -exec perl -pi -0 -e "s/\n{3,}/\n/g" {} \;'
+    # ...in the Gemfile
+    run 'perl -pi -e "s/^\s*#.*\n//g" Gemfile'
+    run 'perl -pi -0 -e "s/\n{3,}/\n/g" Gemfile'
+    run 'perl -pi -0 -e "s/^\=begin.+\=end//" spec/spec_helper.rb'
+  end
+
+  run %Q{echo "#{simplecov}" | cat - spec/spec_helper.rb > /tmp/spec_out && mv /tmp/spec_out spec/spec_helper.rb}
+  # End Enable simplecov
+
   git :init
   git add: '.'
   git commit: %Q{ -m 'Initial commit' }
+end
+
+# Enable simplecov
+def simplecov
+  return <<-END.strip_heredoc
+      require 'simplecov'
+      SimpleCov.minimum_coverage 100
+      # SimpleCov conflicts with mutant. This lets us turn it off, when necessary.
+      SimpleCov.start unless ENV['NOCOVERAGE']
+  END
 end
