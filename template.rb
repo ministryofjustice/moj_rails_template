@@ -4,6 +4,7 @@ gem 'govuk_template'
 gem 'high_voltage'
 gem 'lograge'
 gem 'pry-rails'
+gem 'config'
 
 gem_group :production do
   gem 'rails_12factor'
